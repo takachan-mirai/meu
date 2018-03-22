@@ -1,2 +1,5 @@
 #!/usr/bin/env node
-console.log(process.argv[process.argv.length - 1] + 'めう！')
+if(process.argv.length < 3) console.log("めう！");
+else process.argv.forEach((obj, i) => {
+  if(i > 1) console.log(obj + "めう！");
+});
